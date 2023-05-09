@@ -12,7 +12,6 @@ export async function GET(
   },
 ) {
   const slug = params.slug; // 'a', 'b', or 'c'
-  console.log(slug);
   const content = await findFile('contents', params.slug)
   const { content: str, data } = parseMarkdown(content)
   return NextResponse.json({ content: marked(str), ...data, time: readingTime(str).text });
