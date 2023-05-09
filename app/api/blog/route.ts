@@ -6,7 +6,7 @@ import { parseMarkdown, readDirRecursive } from '@/utils';
 export async function GET(request: Request) {
   const blogPaths: string[] = [];
   const blogData = []
-  await readDirRecursive(blogPaths, 'public/contents/blog')
+  await readDirRecursive(blogPaths, '/contents/blog')
   for (const p of blogPaths) {
     const { content, data } = parseMarkdown(await fs.readFile(p, { encoding: 'utf-8' }))
     blogData.push({
