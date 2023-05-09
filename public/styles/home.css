@@ -1,0 +1,23 @@
+.home h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.home p {
+  margin: 1rem 0;
+  color: rgb(157, 157, 157);
+}
+
+.home a {
+  color: rgb(96, 96, 96);
+  text-decoration: underline;
+  text-decoration-color: gray;
+  text-underline-offset: 4px;
+  transition: all 0.4s;
+}
+
+.home a:hover {
+  text-decoration-color: black;
+  color: black;
+}
