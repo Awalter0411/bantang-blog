@@ -10,7 +10,7 @@ export async function GET(request: Request) {
   for (const p of blogPaths) {
     const { content, data } = parseMarkdown(await fs.readFile(p, { encoding: 'utf-8' }))
     blogData.push({
-      ...data, filename: p.substring(p.lastIndexOf('\\') + 1), time: readingTime(content).text
+      ...data, filename: p.substring(p.lastIndexOf('/') + 1), time: readingTime(content).text
     })
   }
   return NextResponse.json({ list: blogData });
