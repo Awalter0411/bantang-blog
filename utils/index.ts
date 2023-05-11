@@ -28,9 +28,8 @@ export const findFile: any = async (dirPath: string, fileName: string) => {
 
   for (const file of files) {
     const filePath = path.join(dirPath, file);
-    console.log(filePath);
 
-    const stats = await fs.lstat(filePath)
+    const stats = await fs.stat(filePath)
     if (stats.isDirectory()) {
       const foundFile = await findFile(filePath, fileName);
       if (foundFile) {
@@ -38,8 +37,7 @@ export const findFile: any = async (dirPath: string, fileName: string) => {
       }
     } else {
       if (file === fileName) {
-        const fileContent = await fs.readFile(filePath, 'utf-8');
-        return fileContent;
+        return await fs.readFile(filePath, { encoding: 'utf-8' });
       }
     }
   }
