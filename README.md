@@ -24,4 +24,4 @@ pnpm run build
 
 ## star
 
-If this repo could help you build your blog application, please click a star for this repo.Thank you~
+If this repo helped you to build your own blog application, please consider starring this repo. Thank you~
