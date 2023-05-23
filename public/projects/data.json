@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "type": "webapps",
+      "data": [
+        {
+          "name": "bantang-blog",
+          "description": "a blog template",
+          "link": "https://github.com/bantangzm/bantang-blog"
+        },
+        {
+          "name": "Vue3-Fiction",
+          "description": "a Vue3 developed 📕 fiction site",
+          "link": "https://github.com/bantangzm/Vue3-Fiction"
+        },
+        {
+          "name": "v3-todo",
+          "description": "Vue3+Typescript+Vite 的 todo应用",
+          "link": "https://github.com/bantangzm/v3-todo"
+        }
+      ]
+    },
+    {
+      "type": "tools",
+      "data": [
+        {
+          "name": "tracker-sdk",
+          "description": "a sdk for frontend monitoring",
+          "link": "https://github.com/bantangzm/tracker-sdk"
+        },
+        {
+          "name": "npm-quick-search",
+          "description": "a vscode extension for searching npm package quickly in vscode",
+          "link": "https://github.com/bantangzm/npm-quick-search"
+        },
+        {
+          "name": "koa-inventor",
+          "description": "Interactive quick CLI tool for creating Koa projects 🚀🚀, quick develop without configuration",
+          "link": "https://github.com/bantangzm/koa-inventor"
+        }
+      ]
+    }
+  ]
+}

@@ -15,6 +15,7 @@
     "dayjs": "^1.11.7",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "framer-motion": "^10.12.12",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.8.0",
     "marked": "^5.0.1",

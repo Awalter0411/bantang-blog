@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import hljs from "highlight.js/lib/core";
 import "highlight.js/styles/github.css";
+import { setDarkMode } from "@/utils/spaghetti";
 
 interface BlogInfo {
   content: string;
@@ -14,6 +15,7 @@ interface BlogInfo {
 }
 
 const BlogInfo = () => {
+  setDarkMode();
   const pathname = usePathname();
   const filename = pathname.substring(pathname.lastIndexOf("/") + 1);
   const [blogInfo, setBlogInfo] = useState<BlogInfo | null>(null);
@@ -35,7 +37,7 @@ const BlogInfo = () => {
   }, [filename]);
 
   return (
-    <div className="blog">
+    <div className="blog dark:text-slate-200">
       <div dangerouslySetInnerHTML={{ __html: processedContent || "" }}></div>
     </div>
   );
