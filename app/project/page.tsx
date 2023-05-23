@@ -10,7 +10,6 @@ interface IProject {
 }
 
 const ProjectPage = () => {
-  setDarkMode();
   const [projectData, setProjectData] = useState<IProject[]>([]);
   useEffect(() => {
     fetch("/api/project")

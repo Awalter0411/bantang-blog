@@ -5,7 +5,6 @@ import "public/styles/home.css";
 import { setDarkMode } from "@/utils/spaghetti";
 
 export default function Home() {
-  setDarkMode();
   const [content, setContent] = useState("");
   useEffect(() => {
     fetch("/api/home")

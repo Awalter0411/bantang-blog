@@ -15,7 +15,6 @@ interface BlogData {
 }
 
 const BlogPage = () => {
-  setDarkMode();
   const [blogs, setBlogs] = useState<BlogData[]>([]);
 
   const pageCount = useMemo(() => Math.floor(blogs.length / 10) + 1, [blogs]);

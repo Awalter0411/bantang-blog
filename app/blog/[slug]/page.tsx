@@ -15,7 +15,6 @@ interface BlogInfo {
 }
 
 const BlogInfo = () => {
-  setDarkMode();
   const pathname = usePathname();
   const filename = pathname.substring(pathname.lastIndexOf("/") + 1);
   const [blogInfo, setBlogInfo] = useState<BlogInfo | null>(null);
